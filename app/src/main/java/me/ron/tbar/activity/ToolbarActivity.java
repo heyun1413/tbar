@@ -33,6 +33,7 @@ public abstract class ToolbarActivity extends AppCompatActivity {
     }
     private int getStatusBarHeight() {
         try {
+
             Class<?> clazz = Class.forName("com.android.internal.R$dimen");
             Object object = clazz.newInstance();
             int height = Integer.parseInt(clazz.getField("status_bar_height")
